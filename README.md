@@ -1,7 +1,7 @@
-Cafeteria Project Specification
+*Cafeteria Project Specification*
 
 
-Project Overview
+*Project Overview*
 
 PHP application project focusing on revolutionizing cafeteria operations. It is designed with two main parts: Admin View and User View, each tailored to enhance user experience and streamline administrative tasks.
 
@@ -10,7 +10,7 @@ Screen 1: Login
 •	Users and admins can securely log in using their email and password.
 •	Forgot password functionality redirects users and admins to a page to reset their password.
 
-User View
+*User View*
 
 
 Screen 1: Home
@@ -62,8 +62,43 @@ Screen 7: Rooms Management
 Admins can manage rooms, Extensions and add new ones.
 
 Screen 8: Check Management
+
 Admins can view all checks according to specified dates and for specific users.
 If no specific user is selected, all users' checks are displayed.
 Clicking on a username displays their order info during the specified time period.
 
 
+
+*Databse Overview*
+Our MySQL dump file (cafeteria_project.sql) contains the database structure.
+
+*Tables*
+
+1- categories: Stores information about product categories.
+
+2- order_items: Tracks items ordered by users.
+
+3- orders: Manages orders placed by users, including order status and total price.
+
+4- products: Contains details about cafeteria products, including their prices and categories.
+
+5- rooms: Stores information about cafeteria rooms.
+
+6- users: Manages user accounts, including their roles and associated rooms.
+
+
+*Relationships*
+
+•  orders and order_items: Linked via the order_id field, representing a one-to-many relationship between orders and items within those orders.
+
+•  products and categories: Linked via the category_id field, representing a one-to-many relationship between categories and products.
+
+•  orders and users: Linked via the user_id field, representing a one-to-many relationship between users and orders.
+
+•  users and rooms: Linked via the room_id field, representing a one-to-many relationship between users and their assigned rooms.
+
+*DB Usage*
+
+•  To utilize this database structure, import the MySQL dump file into your MySQL database.
+
+•  You can then interact with the tables and data to manage cafeteria operations effectively.
