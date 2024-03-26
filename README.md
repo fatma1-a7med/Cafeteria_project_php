@@ -1,5 +1,8 @@
 Cafeteria Project Specification
+
+
 Project Overview
+
 PHP application project focusing on revolutionizing cafeteria operations. It is designed with two main parts: Admin View and User View, each tailored to enhance user experience and streamline administrative tasks.
 
 Screen 1: Login
