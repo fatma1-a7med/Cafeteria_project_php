@@ -89,17 +89,14 @@ Our MySQL dump file (cafeteria_project.sql) contains the database structure.
 
 *Relationships*
 
-•  orders and order_items: Linked via the order_id field, representing a one-to-many relationship between orders and items within those orders.
+   •  orders and order_items: Linked via the order_id field, representing a one-to-many relationship between orders and items within those orders.
+   •  products and categories: Linked via the category_id field, representing a one-to-many relationship between categories and products.
+   •  orders and users: Linked via the user_id field, representing a one-to-many relationship between users and orders.
+   •  users and rooms: Linked via the room_id field, representing a one-to-many relationship between users and their assigned rooms.
 
-•  products and categories: Linked via the category_id field, representing a one-to-many relationship between categories and products.
-
-•  orders and users: Linked via the user_id field, representing a one-to-many relationship between users and orders.
-
-•  users and rooms: Linked via the room_id field, representing a one-to-many relationship between users and their assigned rooms.
-
-     *DB Usage*
-        •  To utilize this database structure, import the MySQL dump file into your MySQL database.
-        •  You can then interact with the tables and data to manage cafeteria operations effectively.
+ *DB Usage*
+    •  To utilize this database structure, import the MySQL dump file into your MySQL database.
+    •  You can then interact with the tables and data to manage cafeteria operations effectively.
 
     *Contributors* 
     1- Fatma Alzaharaa Ahmed
