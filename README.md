@@ -97,8 +97,14 @@ Our MySQL dump file (cafeteria_project.sql) contains the database structure.
 
 •  users and rooms: Linked via the room_id field, representing a one-to-many relationship between users and their assigned rooms.
 
-*DB Usage*
+     *DB Usage*
+        •  To utilize this database structure, import the MySQL dump file into your MySQL database.
+        •  You can then interact with the tables and data to manage cafeteria operations effectively.
 
-•  To utilize this database structure, import the MySQL dump file into your MySQL database.
+    *Contributors* 
+    1- Fatma Alzaharaa Ahmed
+    2- Maghfera Hassan
+    3- Menna Mahmoud
+    4- Sohila Ehab
+    5- Haidy Essam
 
-•  You can then interact with the tables and data to manage cafeteria operations effectively.
