@@ -67,8 +67,8 @@ $db = new db();
                             while ($row = $result->fetch_assoc()) {
                                 echo "<tr>";
                                 echo "<td>{$row['name']}</td>";
-                                echo "<td>{$row['email']}</td>";
-                                echo "<td><img src='{$row['image']}' width='50' height='50'></td>";
+                                echo "<td>{$row['email']}</td>"; 
+                                echo "<td><img src='../assests/images/{$row['image']}' width='50' height='50'></td>";
                                 echo "<td>{$row['room_number']}</td>";
                                 echo "<td>{$row['Ext']}</td>";
                                 echo "<td>

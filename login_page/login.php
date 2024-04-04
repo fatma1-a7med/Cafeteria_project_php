@@ -120,6 +120,13 @@ button.btn {
 
 button.btn:hover {
   background-color:#4b281e;
+  border: none;
+  outline: none;
+}
+button.btn:active {
+  background-color:#4b281e;
+  border: none;
+  outline: none;
 }
 .login-heading {
   text-align: center;

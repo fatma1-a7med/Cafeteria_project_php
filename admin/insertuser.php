@@ -42,9 +42,9 @@ if (!preg_match('/^\d{3}$/', $Ext)) {
 }
 
 $img = $_FILES['image'] ?? '';
-$targetDirectory = "../assests/images/";
-$targetFile = $targetDirectory . basename($img['name']);
-if (move_uploaded_file($img['tmp_name'], $targetFile)) {
+#$targetDirectory = "../assests/images/";
+$targetFile =basename($img['name']);
+if (move_uploaded_file($img['tmp_name'], "../assests/images/".$targetFile)) {
     $imagePath = $targetFile;
 } else {
     $errors['img_upload'] = "Failed to upload image";

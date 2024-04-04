@@ -60,6 +60,16 @@ function getdata($cols, $tablename, $condition=1){
 }
 
 
+public function get_user_room_info() {
+    $query = "SELECT u.user_id, r.* FROM users u LEFT JOIN rooms r ON u.room_id = r.room_id";
+    $stmt = $this->connection->prepare($query);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $stmt->close();
+    return $result;
+}
+
+
 
 
 function insert_data($tableName, $columns, $values){ 

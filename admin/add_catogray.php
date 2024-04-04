@@ -4,7 +4,7 @@
  ob_start();
  session_start(); 
 ?>
-
+<?php include('includes/header.php')?>
 <?php
 require('../config/dbcon.php');
 if (!isset($_SESSION["user_id"]) || !isset($_SESSION["role"]) || $_SESSION["role"] !== "admin") {

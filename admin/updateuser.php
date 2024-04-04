@@ -20,9 +20,9 @@ $current_image = $_POST['image'];
 $user_id= $_POST['id'];
    
     // Check if room_number and Ext match
-    if ($room_number !== $Ext) {
+    /* if ($room_number !== $Ext) {
         $errors['matching'] = "Room number and Extension must match";
-    }
+    } */
 
     // name
     if (strlen($name) < 5) {
@@ -44,10 +44,10 @@ $user_id= $_POST['id'];
         $target_dir = "./assests/images/";
 
         // Create the full path for the image file
-        $target_file = $target_dir . basename($image);
+        $target_file = basename($image);
 
         // Move the uploaded file to your target directory
-        if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
+        if (move_uploaded_file($_FILES['image']['tmp_name'], ".././assests/images/".$target_file)) {
             // Update the image path with the new one
             $image_path = $target_file;
         } else {
@@ -75,8 +75,6 @@ $user_id= $_POST['id'];
                 'room_number' => $room_number,
                 'Ext' => $Ext,
                 'room_id' => $room_id
-
-
             );
 
             // Update the user record with the room ID, room_number, and Ext
